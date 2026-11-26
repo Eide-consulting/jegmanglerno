@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420">
+  <defs><pattern id="cloth" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0h26v26H0Z" fill="#eee3cd"/><path d="M0 13h26M13 0v26" stroke="#d9c7a2" stroke-width="2" opacity=".5"/></pattern></defs>
+  <ellipse cx="299" cy="211" rx="219" ry="155" fill="#eadbbd"/>
+  <path d="m105 282 275-158 130 145-265 116Z" fill="url(#cloth)"/>
+  <ellipse cx="300" cy="288" rx="160" ry="52" fill="#b9a888" opacity=".25"/>
+  <ellipse cx="300" cy="270" rx="171" ry="58" fill="#fff9e8" stroke="#c4b896" stroke-width="2"/>
+  <ellipse cx="300" cy="269" rx="145" ry="42" fill="none" stroke="#e6dcbf" stroke-width="2"/>
+  <path d="M190 211c-1 46 0 57 35 70 39 15 133 9 157-11 16-13 21-41 9-61Z" fill="#ba8650"/>
+  <ellipse cx="291" cy="256" rx="104" ry="32" fill="#d3a267" stroke="#b78149" stroke-width="2"/>
+  <ellipse cx="295" cy="242" rx="108" ry="34" fill="#e4bc7c" stroke="#b78149" stroke-width="2"/>
+  <ellipse cx="290" cy="225" rx="105" ry="33" fill="#e9c78d" stroke="#bc8c53" stroke-width="2"/>
+  <ellipse cx="293" cy="208" rx="108" ry="34" fill="#ebc589" stroke="#ba8750" stroke-width="2"/>
+  <path d="M214 207c16-25 103-32 150-8" fill="none" stroke="#f5dca5" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#c89258" opacity=".6"><ellipse cx="247" cy="214" rx="15" ry="5"/><ellipse cx="326" cy="211" rx="12" ry="5"/><ellipse cx="276" cy="191" rx="8" ry="3"/><ellipse cx="357" cy="205" rx="6" ry="3"/></g>
+  <path d="m265 191 43-7 21 13-43 8Z" fill="#f4db79" stroke="#d4b55b" stroke-width="1.5"/>
+  <path d="m265 191 1 10 20 13v-9m0 9 43-8v-9" fill="#e4c66b" stroke="#d4b55b" stroke-width="1.5"/>
+  <path d="M311 188c16-10 24 2 23 11s-14 20-6 38 15 20 8 28" fill="none" stroke="#af7240" stroke-width="9" stroke-linecap="round" opacity=".8"/>
+  <g fill="#596379" stroke="#434f63" stroke-width="1.5"><circle cx="257" cy="184" r="10"/><circle cx="243" cy="192" r="10"/><circle cx="268" cy="193" r="9"/><circle cx="372" cy="277" r="10"/><circle cx="390" cy="272" r="9"/><circle cx="406" cy="282" r="10"/></g>
+  <g stroke="#a2a8b2" stroke-width="2" fill="none"><path d="m253 179 4 3-3 3m-14 4 4 3-3 3m126 78 4 3-3 3"/></g>
+  <path d="m402 271 30-27" stroke="#75824e" stroke-width="2"/>
+  <ellipse cx="425" cy="250" rx="14" ry="6" transform="rotate(-30 425 250)" fill="#8d9c60"/>
+  <ellipse cx="415" cy="247" rx="6" ry="13" transform="rotate(-20 415 247)" fill="#7d8e54"/>
+  <path d="M428 193v83" stroke="#a18c6d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M421 150v31c0 15 15 15 15 0v-31m-8 0v36" fill="none" stroke="#a18c6d" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(-10 137 130)"><rect x="89" y="105" width="97" height="48" rx="7" fill="#fffaf0" stroke="#dac9ab"/><text x="137" y="135" text-anchor="middle" fill="#8b7149" font-family="Georgia,serif" font-size="19" font-style="italic">God morgen!</text></g>
+</svg>

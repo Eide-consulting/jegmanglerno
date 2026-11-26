@@ -1,0 +1,15 @@
+{
+  "name": "jegmangler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Finn en erstatning for ingrediensen du mangler.",
+  "type": "module",
+  "scripts": {
+    "serve": "eleventy --serve",
+    "build": "eleventy",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

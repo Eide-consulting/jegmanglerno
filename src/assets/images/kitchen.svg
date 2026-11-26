@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#d7ddcb" stroke-width="1"/></pattern>
+    <linearGradient id="pot" x1="0" x2="1"><stop stop-color="#b96b43"/><stop offset=".5" stop-color="#d78a56"/><stop offset="1" stop-color="#bd7149"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <path d="M73 87C109 21 234 12 351 32S537 82 557 181s-23 169-160 188S100 360 63 289 39 150 73 87" fill="#e7ebdc"/>
+  <path d="M73 87C109 21 234 12 351 32S537 82 557 181s-23 169-160 188S100 360 63 289 39 150 73 87" fill="url(#grid)" opacity=".6"/>
+  <ellipse cx="302" cy="341" rx="216" ry="16" fill="#697351" opacity=".12" filter="url(#shadow)"/>
+  <path d="m78 326 427-10 46 25-430 14Z" fill="#dfc5a1"/>
+  <path d="m121 355 430-14v8l-430 14Z" fill="#c6a37b"/>
+  <path d="m78 326 43 29v8l-43-30Z" fill="#d2af86"/>
+  <path d="m99 331 407-9M125 344l409-12" stroke="#c6a37b" opacity=".6"/>
+  <!-- A wooden spoon and the stock carton behind the pan. -->
+  <path d="m362 228 38-126" stroke="#a57a4d" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="406" cy="85" rx="14" ry="29" transform="rotate(18 406 85)" fill="#b28b5b"/>
+  <path d="m405 70-8 26" stroke="#987347" stroke-width="1.5"/>
+  <path d="m139 136 64-7 12 27-66 7Z" fill="#f5ecd4" stroke="#65705b" stroke-width="1.5"/>
+  <path d="m139 136-9 22 9 122 67-7-3-144" fill="#f5ecd4" stroke="#65705b" stroke-width="1.5"/>
+  <path d="m203 129 12 27 9 122-18-5Z" fill="#bcc5a4" stroke="#65705b" stroke-width="1.5"/>
+  <path d="m131 166 75-8 3 77-72 8Z" fill="#718367"/>
+  <path d="m147 139 42-4M146 145l45-4" stroke="#c9bb9a" stroke-width="2"/>
+  <text x="169" y="193" transform="rotate(-6 169 193)" text-anchor="middle" fill="#fffbed" font-family="Georgia,serif" font-size="17">KRAFT</text>
+  <path d="m159 214 12-10 12 7-11 11Z" fill="none" stroke="#d9e2c7" stroke-width="1.5"/>
+  <path d="m149 253 43-5M151 260l28-3" stroke="#b3aa8a" stroke-width="2"/>
+  <path d="m148 179 41 30m-39 4 37-41" stroke="#efc7a6" stroke-width="2" opacity=".6"/>
+  <!-- Steam curls above the sauce. -->
+  <g fill="none" stroke="#929b7d" stroke-width="2" stroke-linecap="round" opacity=".8"><path d="M264 172c-17-20 13-25-1-45"/><path d="M298 162c-19-22 16-31 0-53"/><path d="M330 173c-16-18 12-23 2-38"/></g>
+  <path d="M209 233c-46-23-54 15-20 22l22 4M383 224c40-27 56 7 24 19l-23 7" fill="none" stroke="#414d40" stroke-width="12"/>
+  <path d="M208 224c0 0 5 62 18 77 17 21 111 27 144 1 16-14 20-78 20-78Z" fill="url(#pot)" stroke="#955838" stroke-width="2"/>
+  <ellipse cx="299" cy="224" rx="91" ry="27" fill="#e0a270" stroke="#955838" stroke-width="2"/>
+  <ellipse cx="299" cy="225" rx="81" ry="20" fill="#70482f"/>
+  <path d="M237 228c28-12 79-19 118-2" fill="none" stroke="#a2764c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M235 252c1 17 5 30 12 36" fill="none" stroke="#e4a775" stroke-width="5" stroke-linecap="round"/>
+  <path d="m270 218 9 3m40 8 8-1m-28-12 5 2" stroke="#d9bd7a" stroke-width="2" stroke-linecap="round"/>
+  <!-- The cup of bouillon. -->
+  <path d="M433 275c38-16 36 27 7 20" fill="none" stroke="#748168" stroke-width="7"/>
+  <path d="m389 261 7 46c3 17 41 18 47 0l6-46Z" fill="#f9f4e3" stroke="#748168" stroke-width="2"/>
+  <ellipse cx="419" cy="261" rx="30" ry="10" fill="#b88a4e" stroke="#748168" stroke-width="2"/>
+  <ellipse cx="419" cy="260" rx="23" ry="6" fill="#ba925a"/>
+  <path d="m402 277 2 22" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M415 239c-10-12 9-16 0-29m14 26c-8-10 7-13 1-24" fill="none" stroke="#929b7d" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Fresh herbs and a tomato on the counter. -->
+  <path d="m155 323 48-38m-29 24-19-27m28 19 13-39m-20 46-37 1" fill="none" stroke="#617c49" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#788e59"><ellipse cx="156" cy="282" rx="7" ry="14" transform="rotate(-30 156 282)"/><ellipse cx="144" cy="309" rx="14" ry="7" transform="rotate(10 144 309)"/><ellipse cx="196" cy="272" rx="7" ry="15" transform="rotate(22 196 272)"/><ellipse cx="179" cy="289" rx="7" ry="13" transform="rotate(-20 179 289)"/><ellipse cx="201" cy="289" rx="13" ry="7" transform="rotate(-20 201 289)"/></g>
+  <path d="M474 308c-26-10-36 25-13 32 27 10 49-18 27-29Z" fill="#c85f40"/>
+  <path d="m473 310-7-9 10 4 7-8-2 12 11 2-13 3" fill="#657b48"/>
+  <path d="M458 319c-3 4-2 8 0 10" stroke="#e99875" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Handwritten kitchen labels. -->
+  <g transform="rotate(7 464 111)"><rect x="414" y="86" width="117" height="45" rx="7" fill="#fffcf3" stroke="#d6cdb9"/><text x="472" y="114" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="18" fill="#58664b">Det går fint!</text></g>
+  <path d="M477 144c7 22-4 43-24 47m0 0 4-9m-4 9 10 1" fill="none" stroke="#7b8867" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <g transform="rotate(-7 117 86)"><path d="m97 84 7-11 7 11 13 2-10 8 1 13-11-7-12 5 3-13-9-9Z" fill="#d5aa64"/><path d="m124 61 2-7m8 13 6-2" stroke="#d5aa64" stroke-width="2" stroke-linecap="round"/></g>
+</svg>

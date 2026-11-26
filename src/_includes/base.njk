@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="{{ description or site.description }}">
+    <title>{% if title %}{{ title }} – {% endif %}{{ site.title }} – Middagen er ikke avlyst.</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script type="module" src="/assets/js/app.js"></script>
+    {% if localAuthoring and page.url == "/legg-inn/" %}
+      <script type="module" src="/assets/js/author.js"></script>
+    {% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hopp til innholdet</a>
+    <header class="site-header wrap">
+      <a class="logo" href="/" aria-label="Jeg mangler – hjem">
+        <svg viewBox="0 0 32 36" aria-hidden="true"><path d="M16 33V14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 23C3 23 2 15 3 10c9-1 14 4 13 13ZM16 16C15 5 23 1 29 2c1 9-5 15-13 14Z" fill="currentColor"/></svg>
+        jeg mangler<span class="logo-dot">.</span>
+      </a>
+      <nav aria-label="Hovedmeny">
+        <a href="/#oppskrifter">Oppskrifter</a>
+        <a href="/#slik-fungerer-det">Om jeg mangler <span aria-hidden="true">↗</span></a>
+      </nav>
+      <span class="header-note"><span aria-hidden="true">✳</span> God mat. Mindre svinn.</span>
+    </header>
+    <main id="main">
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer wrap">
+      <a class="logo footer-logo" href="/">jeg mangler<span class="logo-dot">.</span></a>
+      <p>For de små kjøkkenkrisene. Og de gode middagene.</p>
+      <span>{% if localAuthoring %}<a href="/legg-inn/">Legg inn oppskrift</a>{% else %}Laget med matglede{% endif %} <span class="heart" aria-hidden="true">♡</span></span>
+    </footer>
+  </body>
+</html>

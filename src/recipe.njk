@@ -1,0 +1,19 @@
+---
+layout: base.njk
+pagination:
+  data: recipes
+  size: 1
+  alias: recipe
+permalink: "/oppskrift/{{ recipe.slug }}/"
+eleventyComputed:
+  title: "{{ recipe.title }}"
+  description: "{{ recipe.description }}"
+---
+<article class="recipe-detail wrap">
+  <a class="back-link" href="/#oppskrifter"><span aria-hidden="true">←</span> Alle oppskrifter</a>
+  <div class="detail-hero">
+    <div><p class="eyebrow">{{ recipe.category }}</p><h1>{{ recipe.title }}</h1><p class="detail-description">{{ recipe.description }}</p><div class="detail-meta"><span class="detail-badge">Uten {{ recipe.missingIngredient }}</span><span>◷ {{ recipe.minutes }} min</span><span>{{ recipe.servings }} porsjoner</span></div><button id="print-recipe" class="text-button" type="button">Skriv ut oppskriften <span aria-hidden="true">↗</span></button></div>
+    <div class="detail-image {{ recipe.illustration }}"><img src="/assets/images/{{ recipe.illustration }}.svg" width="600" height="420" alt=""></div>
+  </div>
+  <div class="recipe-reading"><div class="recipe-content">{{ recipe.content }}</div><aside class="reading-note"><span aria-hidden="true">✳</span><h2>Et lite steg.<br>En god middag.</h2><p>Denne oppskriften er skrevet uten {{ recipe.missingIngredient }}. Les gjennom ingrediensene før du begynner, og sjekk alltid pakningene ved allergi.</p><a class="text-link" href="/#oppskrifter">Flere oppskrifter <span aria-hidden="true">→</span></a></aside></div>
+</article>

@@ -1,0 +1,57 @@
+---
+layout: base.njk
+---
+<section class="hero wrap" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="small-line"></span> MIDDAGEN ER IKKE AVLYST</p>
+    <h1 id="hero-title">Du mangler én ting.<br>Ikke <em>hele middagen.</em></h1>
+    <p class="hero-description">Tomt for kraft? Ikke mer egg? Her finner du ferdige oppskrifter som klarer seg uten. God mat, med det du har.</p>
+    <a class="text-link" href="#oppskrifter">Finn noe godt å lage <span aria-hidden="true">↓</span></a>
+    <div class="hero-footnote"><span class="leaf-icon" aria-hidden="true">⌁</span> Bruk det du har. Spar en tur på butikken.</div>
+  </div>
+  <div class="hero-art">
+    <img src="/assets/images/kitchen.svg" width="600" height="420" alt="En gryte med brun saus, grønnsaker og en kopp buljong på kjøkkenbenken">
+    <span class="art-caption">Litt kreativitet. Fortsatt kjempegodt.</span>
+  </div>
+</section>
+
+<section class="recipes-section wrap" id="oppskrifter" aria-labelledby="recipes-heading">
+  <div class="section-heading">
+    <div><p class="eyebrow">FRA «Å NEI» TIL «DET GÅR FINT»</p><h2 id="recipes-heading">Hva mangler du?</h2></div>
+    <span class="section-aside">Ferdige oppskrifter. Små kjøkkenredninger.</span>
+  </div>
+  <form id="search-form" class="recipe-search" role="search">
+    <label class="visually-hidden" for="recipe-search">Søk etter oppskrift eller ingrediensen du mangler</label>
+    <div class="search-field"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="recipe-search" type="search" placeholder="F.eks. kraft, egg eller melk …" autocomplete="off"></div>
+    <button class="primary-button" type="submit">Finn oppskrifter <span aria-hidden="true">→</span></button>
+  </form>
+  <div class="recipe-filters" aria-label="Filtrer etter ingrediensen du mangler">
+    <span>Jeg mangler</span>
+    <button class="filter-chip active" data-filter="" type="button" aria-pressed="true">Vis alle</button>
+    {% for ingredient in ingredients %}
+      <button class="filter-chip" data-filter="{{ ingredient }}" type="button" aria-pressed="false">{{ ingredient }}</button>
+    {% endfor %}
+  </div>
+  <p class="search-status" id="search-status" role="status" hidden></p>
+  <div class="published-recipes" id="recipe-grid">
+    {% for recipe in recipes %}
+      <article class="published-card" data-search="{{ recipe.title }} {{ recipe.missingIngredient }} {{ recipe.description }}" data-missing="{{ recipe.missingIngredient }}">
+        <a href="/oppskrift/{{ recipe.slug }}/" class="recipe-card-link">
+          <div class="recipe-image {{ recipe.illustration }}"><span class="without-badge">UTEN {{ recipe.missingIngredient | upper }}</span><img src="/assets/images/{{ recipe.illustration }}.svg" width="600" height="420" alt="" loading="lazy"></div>
+          <div class="published-card-body"><p class="eyebrow">{{ recipe.category }}</p><h3>{{ recipe.title }}</h3><p class="recipe-excerpt">{{ recipe.description }}</p><div class="recipe-card-meta"><span><span aria-hidden="true">◷</span> {{ recipe.minutes }} min</span><span>{{ recipe.servings }} porsjoner</span><span class="recipe-card-arrow" aria-hidden="true">↗</span></div></div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+  <div class="no-recipes" id="no-recipes" hidden><h3>Den oppskriften har vi ikke ennå.</h3><p>Prøv et annet søk, eller se alle oppskriftene. Her finner du bare ferdig skrevne oppskrifter – ingen automatiske erstatningsforslag.</p><button id="reset-search" type="button" class="text-button">Vis alle oppskrifter <span aria-hidden="true">→</span></button></div>
+  <noscript><p class="form-note">Alle oppskriftene vises ovenfor. Søk og filtrering krever JavaScript.</p></noscript>
+</section>
+
+<section class="how-section wrap" id="slik-fungerer-det" aria-labelledby="how-heading">
+  <div class="how-intro"><p class="eyebrow">EN LITEN OMVEI. EN GOD MIDDAG.</p><h2 id="how-heading">Det trenger ikke<br>være helt etter boka.</h2></div>
+  <div class="how-step"><span class="how-number">01</span><h3>Et tomt kjøkkenskap?</h3><p>Den ene ingrediensen var ikke der du trodde. Det skjer oss alle.</p></div>
+  <div class="how-step"><span class="how-number">02</span><h3>En oppskrift uten</h3><p>Finn en ferdig oppskrift som er laget uten akkurat det du mangler.</p></div>
+  <div class="how-step"><span class="how-number">03</span><h3>Likevel en god middag</h3><p>Følg oppskriften, bruk det du har og la handleturen vente.</p></div>
+</section>
+
+<section class="bottom-note wrap"><span aria-hidden="true">✳</span><p>Den beste ingrediensen?<br><strong>Den du allerede har.</strong></p><span class="bottom-note-aside">Mindre matsvinn starter<br>med små, smarte valg.</span></section>

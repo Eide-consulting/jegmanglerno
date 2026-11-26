@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Legg inn en oppskrift
+description: Klargjør en ferdig oppskrift for publisering på jeg mangler.
+permalink: /legg-inn/
+---
+<section class="author-page wrap">
+  <a class="back-link" href="/"><span aria-hidden="true">←</span> Til forsiden</a>
+  <p class="eyebrow">FOR DEG SOM LEGGER INN OPPSKRIFTER</p>
+  <h1>En oppskrift til samlingen.</h1>
+  <p class="author-intro">Lim inn en ferdig oppskrift og last ned en oppskriftsfil. Verktøyet kjører bare i nettleseren; det skriver ikke om teksten og publiserer ingenting automatisk.</p>
+  <div class="publishing-note"><strong>Slik publiserer du med Modern-web</strong><p>Last ned filen, legg den i <code>src/recipes/</code> i prosjektet og kjør <code>npm run build</code>. Last bare opp innholdet i <code>_site/</code> til webhotellet. Produksjonsbygget utelater denne siden og innleggingsverktøyets JavaScript automatisk. <code>npm run serve</code> bruker en egen lokal mappe, <code>_preview/</code>, som ikke skal lastes opp. For å oppdatere en oppskrift: erstatt filen med samme nettadresse og bygg på nytt. Hvis <code>/legg-inn/</code> ble publisert tidligere, må den gamle mappen også slettes fra webhotellet.</p></div>
+  <noscript><p class="notice">Innleggingsverktøyet krever JavaScript. Du kan også legge en oppskriftsfil direkte i src/recipes/ ved å følge formatet i de eksisterende JSON-filene.</p></noscript>
+  <form class="author-form" id="author-form">
+    <div class="author-fields">
+      <label for="recipe-title">Navn på oppskriften<input id="recipe-title" name="title" placeholder="Brun saus uten kraft" required maxlength="120"></label>
+      <label for="recipe-slug">Nettadresse<input id="recipe-slug" name="slug" placeholder="brun-saus-uten-kraft" required maxlength="120" pattern="[a-z0-9]+(-[a-z0-9]+)*" aria-describedby="slug-help"><span id="slug-help">Små bokstaver, tall og bindestreker. Må være unik.</span></label>
+      <label for="missing-ingredient">Oppskriften er uten<input id="missing-ingredient" name="missingIngredient" placeholder="kraft" required maxlength="60"></label>
+      <label for="recipe-category">Kategori<input id="recipe-category" name="category" value="HVERDAGSMAT" required maxlength="60"></label>
+      <label for="recipe-minutes">Tid i minutter<input id="recipe-minutes" name="minutes" type="number" min="1" max="1440" value="20" required></label>
+      <label for="recipe-servings">Antall porsjoner<input id="recipe-servings" name="servings" type="number" min="1" max="1440" value="4" required></label>
+    </div>
+    <label for="recipe-description">Kort beskrivelse<textarea id="recipe-description" name="description" placeholder="En fyldig, hjemmelaget brun saus …" required maxlength="300" rows="2"></textarea></label>
+    <label for="recipe-illustration">Illustrasjon<select id="recipe-illustration" name="illustration"><option value="kitchen">Gryte og kjøkken</option><option value="pancakes">Pannekaker</option><option value="muffins">Muffins</option></select></label>
+    <label for="recipe-body">Oppskriften – lim inn hele den ferdige teksten<textarea id="recipe-body" name="content" placeholder="INGREDIENSER&#10;&#10;2 ss smør&#10;2 ss hvetemel&#10;…&#10;&#10;SLIK GJØR DU&#10;&#10;1. Smelt smøret …" required maxlength="30000" rows="16" aria-describedby="body-help"></textarea><span id="body-help">Ren tekst med linjeskift. Ta med ingredienser, fremgangsmåte, eventuelle tips og allergener. Teksten vises akkurat slik du legger den inn.</span></label>
+    <div class="author-actions"><button type="button" class="secondary-button" id="preview-button">Forhåndsvis teksten</button><button type="submit" class="primary-button">Last ned oppskriftsfil <span aria-hidden="true">↓</span></button></div>
+    <p class="author-status" id="author-status" role="status" hidden></p>
+  </form>
+  <section class="author-preview" id="author-preview" aria-labelledby="preview-title" hidden><p class="eyebrow">TEKSTFORHÅNDSVISNING · IKKE PUBLISERT</p><h2 id="preview-title"></h2><p id="preview-description"></p><p id="preview-meta" class="preview-meta"></p><div id="preview-content" class="recipe-content"></div></section>
+</section>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420">
+  <defs><pattern id="linen" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M0 0h24v24H0Z" fill="#e6d7cb"/><path d="M0 12h24M12 0v24" stroke="#cdb5a4" stroke-width="1" opacity=".4"/></pattern></defs>
+  <ellipse cx="301" cy="217" rx="221" ry="151" fill="#e2d4c9"/>
+  <path d="m127 283 282-144 120 172-287 60Z" fill="url(#linen)"/>
+  <ellipse cx="303" cy="299" rx="180" ry="47" fill="#b59b88" opacity=".2"/>
+  <ellipse cx="300" cy="283" rx="178" ry="57" fill="#fbf5e8" stroke="#c9b9a5" stroke-width="2"/>
+  <ellipse cx="300" cy="283" rx="154" ry="40" fill="none" stroke="#e3d7c5" stroke-width="2"/>
+  <g transform="translate(240 140) scale(.8)">
+    <path d="m-55 38 13 82c13 16 66 16 82-1l16-81Z" fill="#a78166" stroke="#82634c" stroke-width="2"/>
+    <path d="m-43 49 12 70m6-73 6 80m12-84v87m13-87-7 81m23-82-13 74" stroke="#d1b398" stroke-width="3"/>
+    <path d="M-62 42c-12-20 3-43 19-45 0-26 28-35 45-22 22-14 49 0 48 20 23 5 34 33 17 48-21 18-106 15-129-1Z" fill="#c89b62" stroke="#a57a48" stroke-width="2"/>
+    <path d="M-44 14c-1-12 13-24 25-19m21-5c13-8 28 0 31 10" stroke="#e9c995" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g fill="#966e41"><circle cx="-28" cy="22" r="3"/><circle cx="8" cy="6" r="3"/><circle cx="36" cy="21" r="3"/></g>
+  </g>
+  <g transform="translate(360 201)">
+    <path d="m-58 38 14 81c16 18 67 18 84-1l17-80Z" fill="#b38d70" stroke="#8d6c53" stroke-width="2"/>
+    <path d="m-46 47 12 72m6-75 7 82m12-83v87m14-89-6 85m22-82-11 76" stroke="#d8baa0" stroke-width="3"/>
+    <path d="M-66 40c-9-19 1-43 21-45 0-24 26-35 46-22 24-11 48 1 47 20 23 0 38 31 19 49-20 22-108 18-133-2Z" fill="#d2a66d" stroke="#a7814e" stroke-width="2"/>
+    <path d="M-48 11c1-12 13-20 28-18m24-7c11-3 25 5 28 14" stroke="#f1d5a4" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g fill="#9f7747"><circle cx="-35" cy="23" r="3"/><circle cx="11" cy="6" r="3"/><circle cx="39" cy="28" r="3"/><circle cx="-1" cy="35" r="3"/></g>
+  </g>
+  <g transform="translate(210 217)">
+    <path d="m-58 38 14 81c16 18 67 18 84-1l17-80Z" fill="#c3a082" stroke="#947358" stroke-width="2"/>
+    <path d="m-46 47 12 72m6-75 7 82m12-83v87m14-89-6 85m22-82-11 76" stroke="#e9cfb7" stroke-width="3"/>
+    <path d="M-66 40c-9-19 1-43 21-45 0-24 26-35 46-22 24-11 48 1 47 20 23 0 38 31 19 49-20 22-108 18-133-2Z" fill="#d9b177" stroke="#af8954" stroke-width="2"/>
+    <path d="M-48 11c1-12 13-20 28-18m24-7c11-3 25 5 28 14" stroke="#f4d9aa" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g fill="#ac814d"><circle cx="-35" cy="23" r="3"/><circle cx="11" cy="6" r="3"/><circle cx="39" cy="28" r="3"/><circle cx="-1" cy="35" r="3"/></g>
+  </g>
+  <path d="M422 109c-5 58 10 87 49 79-19 22-61 7-64-49-1-18 4-25 15-30Z" fill="#d8b96b" stroke="#a78e4b" stroke-width="2"/>
+  <path d="M422 117c-6 28 2 64 24 72" fill="none" stroke="#ecd591" stroke-width="4" stroke-linecap="round"/>
+  <path d="m416 104 9-3 2 11-10 2Z" fill="#8d7844"/>
+  <g transform="rotate(7 144 127)"><rect x="91" y="103" width="106" height="45" rx="7" fill="#fff8ee" stroke="#d0bbaa"/><text x="144" y="132" text-anchor="middle" fill="#8e6e53" font-family="Georgia,serif" font-size="18" font-style="italic">Rett fra ovnen.</text></g>
+</svg>
